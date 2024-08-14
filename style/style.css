@@ -72,7 +72,6 @@ ul li {
     cursor: pointer;
     position: relative;
     align-items: center;
-
 }
 ul li::before{
     content: '';
@@ -109,4 +108,43 @@ ul li span {
 }
 ul li span:hover{
     background: #c9d5ee;
+}
+
+@media screen and (max-width:576px) {
+    .todo-app{
+        width: 100%;
+        max-width:100%;
+        margin: .5rem auto;
+        padding: .5rem 0rem;
+
+    }
+    .todo-app h2{
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+    .todo-app h2 img{
+        width: 20px;
+    }
+    #input-box{
+        width: 100%;
+        height: 2rem;
+        padding: 1rem;
+        font-size: .7rem;
+    }
+    .add{
+        width:95%;
+        gap: .3rem;
+        margin-bottom: 1rem;
+    }
+    #list-container {
+        padding:0rem 1.5rem;
+      
+    }
+    ul li{
+        font-size: .8rem;
+    }
+    ul li::before{
+        margin-top: 0rem;
+    }
+    
 }
